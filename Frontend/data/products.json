@@ -1,0 +1,3379 @@
+{
+  "categoryTiles": [
+    {
+      "id": "laptops",
+      "title": "Noutbuklar",
+      "image": "../img/laptop.png"
+    }
+  ],
+  "categories": {
+    "new": [],
+    "best": []
+  },
+  "products": [
+    {
+      "id": "l-001",
+      "title": "Acer A Lite AL15-32P-C8T3",
+      "price": 2587950,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerALiteAL151.png",
+        "../img/acer/AcerALiteAL152.png",
+        "../img/acer/AcerALiteAL153.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "N4500"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "256GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Steel Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-002",
+      "title": "Acer A Lite AL16-52P-32E3",
+      "price": 3705750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerALiteAL16-52P1.png",
+        "../img/acer/AcerALiteAL16-52P2.png",
+        "../img/acer/AcerALiteAL16-52P3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1305U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Light Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-003",
+      "title": "Acer A Lite AL16-52P-52JZ",
+      "price": 4677750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerALiteAL16-52P1.png",
+        "../img/acer/AcerALiteAL16-52P2.png",
+        "../img/acer/AcerALiteAL16-52P3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1334U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Light Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-004",
+      "title": "Acer A3 A315-24P-R490 U",
+      "price": 4191750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerA3A315-24P1.png",
+        "../img/acer/AcerA3A315-24P2.png",
+        "../img/acer/AcerA3A315-24P3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-7520"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Pure Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-005",
+      "title": "Acer A3 A315-24P-R4VE U",
+      "price": 3705750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerA3A315-24P1.png",
+        "../img/acer/AcerA3A315-24P2.png",
+        "../img/acer/AcerA3A315-24P3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R3-7320"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Pure Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-006",
+      "title": "Acer A3 A315-59-50GA",
+      "price": 4495500,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerA3A315-59-50GA1.png",
+        "../img/acer/AcerA3A315-59-50GA2.png",
+        "../img/acer/AcerA3A315-59-50GA3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1235U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "256GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Pure silver"
+        }
+      ]
+    },
+    {
+      "id": "l-007",
+      "title": "Acer A5 A515-58GM-50CH",
+      "price": 6986250,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerA5A515-58GM-50CH1.png",
+        "../img/acer/AcerA5A515-58GM-50CH2.png",
+        "../img/acer/AcerA5A515-58GM-50CH3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13420H"
+        },
+        {
+          "k": "Videokarta",
+          "v": "RTX2050"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Steel Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-008",
+      "title": "Acer A5 A515-58P-3002",
+      "price": 3766500,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerA5A515-58GM-50CH1.png",
+        "../img/acer/AcerA5A515-58GM-50CH2.png",
+        "../img/acer/AcerA5A515-58GM-50CH3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1315U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Steel Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-009",
+      "title": "Acer A5 A515-58P-72EH",
+      "price": 6135750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerA5A515-58GM-50CH1.png",
+        "../img/acer/AcerA5A515-58GM-50CH2.png",
+        "../img/acer/AcerA5A515-58GM-50CH3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-1355U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Steel Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-010",
+      "title": "Acer Extensa 15 EX215-35-30K1",
+      "price": 4313250,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerExtensa15EX215-35-30K11.png",
+        "../img/acer/AcerExtensa15EX215-35-30K12.png",
+        "../img/acer/AcerExtensa15EX215-35-30K13.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "N355"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Pure Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-011",
+      "title": "Acer Extensa 15 EX215-56-372U",
+      "price": 4313250,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerExtensa15EX215-56-372U1.png",
+        "../img/acer/AcerExtensa15EX215-56-372U2.png",
+        "../img/acer/AcerExtensa15EX215-56-372U3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 3-100U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Steel Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-012",
+      "title": "Acer Extensa EX215-23-R2ZY U",
+      "price": 4070250,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerExtensa15EX215-56-372U1.png",
+        "../img/acer/AcerExtensa15EX215-56-372U2.png",
+        "../img/acer/AcerExtensa15EX215-56-372U3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R3-7320"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS"
+        },
+        {
+          "k": "Rangi",
+          "v": "Steel Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-013",
+      "title": "Acer Predator Helios Neo 16 AI PHN16-73-90EL  275HX",
+      "price": 19257750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerPredatorHeliosNeo16AIPHN16-73-90EL1.png",
+        "../img/acer/AcerPredatorHeliosNeo16AIPHN16-73-90EL2.png",
+        "../img/acer/AcerPredatorHeliosNeo16AIPHN16-73-90EL3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core Ultra 9"
+        },
+        {
+          "k": "Videokarta",
+          "v": "RTX5070"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "32GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA 240Hz"
+        },
+        {
+          "k": "Rangi",
+          "v": "Abyssal Black"
+        }
+      ]
+    },
+    {
+      "id": "l-014",
+      "title": "Acer Predator Helios Neo 16S AI PHN16S-71-91JF  275HX",
+      "price": 17070750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerPredatorHeliosNeo16SAIPHN16S-71-91JF1.png",
+        "../img/acer/AcerPredatorHeliosNeo16SAIPHN16S-71-91JF2.png",
+        "../img/acer/AcerPredatorHeliosNeo16SAIPHN16S-71-91JF3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core Ultra 9 Videokarta: RTX5060"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "32GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA 240Hz"
+        },
+        {
+          "k": "Rangi",
+          "v": "Abyssal Black"
+        }
+      ]
+    },
+    {
+      "id": "l-015",
+      "title": "Acer Predator Helios Neo 18 AI PHN18-72-97G7 HX",
+      "price": 26790750,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerPredatorHeliosNeo18AIPHN18-72-97G71.png",
+        "../img/acer/AcerPredatorHeliosNeo18AIPHN18-72-97G72.png",
+        "../img/acer/AcerPredatorHeliosNeo18AIPHN18-72-97G73.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Ultra 9-275 Videokarta: RTX5070Ti"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "32(4)GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "18\" WQXGA IPS 240Hz"
+        },
+        {
+          "k": "Rangi",
+          "v": "Abyssal Black"
+        }
+      ]
+    },
+    {
+      "id": "l-016",
+      "title": "Acer TravelMate B1 TMB118-M-C6JP",
+      "price": 2126250,
+      "brand": "Acer",
+      "category": "laptops",
+      "images": [
+        "../img/acer/AcerTravelMateB1TMB118-M-C6JP1.png",
+        "../img/acer/AcerTravelMateB1TMB118-M-C6JP2.png",
+        "../img/acer/AcerTravelMateB1TMB118-M-C6JP3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "QUADRO N4120"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "4GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "64(EMMC)GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "11.6\" HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Mattle Black"
+        }
+      ]
+    },
+    {
+      "id": "l-017",
+      "title": "ASUS E510KA-BR859WS",
+      "price": 2551500,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSE510KA-BR859WS1.png",
+        "../img/asus/ASUSE510KA-BR859WS2.png",
+        "../img/asus/ASUSE510KA-BR859WS3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "N4500"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "4GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "128GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Peacock Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-018",
+      "title": "ASUS ExpertBook L2502CYA-EJ0113",
+      "price": 4070250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSExpertBookL2502CYA-EJ01131.png",
+        "../img/asus/ASUSExpertBookL2502CYA-EJ01132.png",
+        "../img/asus/ASUSExpertBookL2502CYA-EJ01133.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-5625U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "256GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Star Black Qirilgan"
+        }
+      ]
+    },
+    {
+      "id": "l-019",
+      "title": "ASUS ExpertBook P1503CVA-S70532",
+      "price": 5467500,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSExpertBookP1503CVA-S705321.png",
+        "../img/asus/ASUSExpertBookP1503CVA-S705322.png",
+        "../img/asus/ASUSExpertBookP1503CVA-S705323.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13420H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Misty Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-020",
+      "title": "ASUS ROG STRIX G615LW-S5027",
+      "price": 35903250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSROGSTRIXG615LW-S50271.png",
+        "../img/asus/ASUSROGSTRIXG615LW-S50272.png",
+        "../img/asus/ASUSROGSTRIXG615LW-S50273.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Ultra 9-275HX Videokarta: RTX5080"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "32GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Eclipse Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-021",
+      "title": "ASUS ROG STRIX G815LW-S9103",
+      "price": 40155750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSROGSTRIXG615LW-S50271.png",
+        "../img/asus/ASUSROGSTRIXG615LW-S50272.png",
+        "../img/asus/ASUSROGSTRIXG615LW-S50273.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core Ultra 9-275HX Videokarta: RTX5080"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "32GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "18\" WQXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Eclipse Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-022",
+      "title": "ASUS S5606MA-MX090",
+      "price": 9659250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSS5606MA-MX0901.png",
+        "../img/asus/ASUSS5606MA-MX0902.png",
+        "../img/asus/ASUSS5606MA-MX0903.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core Ultra 7-155H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" OLED(3200x2000)"
+        },
+        {
+          "k": "Rangi",
+          "v": "Neutral Black"
+        }
+      ]
+    },
+    {
+      "id": "l-023",
+      "title": "ASUS TUF Gaming A15 FA506NFR-HN004",
+      "price": 6840450,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSTUFGamingA151.1.png",
+        "../img/asus/ASUSTUFGamingA152.2.png",
+        "../img/asus/ASUSTUFGamingA153.3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-7435HS Videokarta: RTX2050"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Graphite Black"
+        }
+      ]
+    },
+    {
+      "id": "l-024",
+      "title": "ASUS TUF Gaming FA608PP-QT028",
+      "price": 19014750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSTUFGamingFA608PP-QT0281.png",
+        "../img/asus/ASUSTUFGamingFA608PP-QT0282.png",
+        "../img/asus/ASUSTUFGamingFA608PP-QT0283.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R9-8940HX Videokarta: RTX5070"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Rangi",
+          "v": "Jeager Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-025",
+      "title": "ASUS TUF Gaming FA808UP-S8017",
+      "price": 18528750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSTUFGamingFX607VJ-RL0061.png",
+        "../img/asus/ASUSTUFGamingFX607VJ-RL0062.png",
+        "../img/asus/ASUSTUFGamingFX607VJ-RL0063.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-260 Videokarta: RTX5070"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "18\" WUXGA WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Jeager Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-026",
+      "title": "ASUS TUF Gaming FX607VJ-RL006",
+      "price": 8930250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0401.png",
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0402.png",
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0403.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 5-210H Videokarta: RTX3050"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Mecha Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-027",
+      "title": "ASUS TUF Gaming FX608JMR-QT040",
+      "price": 15369750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0401.png",
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0402.png",
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0403.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-14650HX Videokarta: RTX5060"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Jeager Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-028",
+      "title": "ASUS TUF Gaming FX608JPR-QT035",
+      "price": 18650250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0401.png",
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0402.png",
+        "../img/asus/ASUSTUFGamingFX608JMR-QT0403.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-14650HX Videokarta: RTX5070"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Jeager Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-029",
+      "title": "ASUS V16 V3607VM-RP005",
+      "price": 12210750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSV16V3607VM-RP005Core1.png",
+        "../img/asus/ASUSV16V3607VM-RP005Core2.png",
+        "../img/asus/ASUSV16V3607VM-RP005Core3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 5-210H Videokarta: RTX5060"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Matte Black"
+        }
+      ]
+    },
+    {
+      "id": "l-030",
+      "title": "ASUS V16 V3607VM-RP006",
+      "price": 14640750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSV16V3607VM-RP005Core1.png",
+        "../img/asus/ASUSV16V3607VM-RP005Core2.png",
+        "../img/asus/ASUSV16V3607VM-RP005Core3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 7-240H Videokarta: RTX5060"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Matte Black"
+        }
+      ]
+    },
+    {
+      "id": "l-031",
+      "title": "ASUS VivoBook A1502VA-NJ1278",
+      "price": 8565750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookA1502VA-NJ12781.png",
+        "../img/asus/ASUSVivoBookA1502VA-NJ12782.png",
+        "../img/asus/ASUSVivoBookA1502VA-NJ12783.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i9-13900H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Quiet Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-032",
+      "title": "ASUS VivoBook A1504VA-BQ727",
+      "price": 4191750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookE1504FA-BQ4761.png",
+        "../img/asus/ASUSVivoBookE1504FA-BQ4762.png",
+        "../img/asus/ASUSVivoBookE1504FA-BQ4763.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1315U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Quiet Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-033",
+      "title": "ASUS VivoBook E1504FA-BQ476",
+      "price": 4617000,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookE1504FA-BQ4761.png",
+        "../img/asus/ASUSVivoBookE1504FA-BQ4762.png",
+        "../img/asus/ASUSVivoBookE1504FA-BQ4763.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-7520U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD WV"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-034",
+      "title": "ASUS VivoBook E1504GA-NJ084W",
+      "price": 3705750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookE1504FA-BQ4761.png",
+        "../img/asus/ASUSVivoBookE1504FA-BQ4762.png",
+        "../img/asus/ASUSVivoBookE1504FA-BQ4763.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-N305"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "256GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-035",
+      "title": "ASUS VivoBook GO 15 L1504FA-BQ917",
+      "price": 3705750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookGO151.png",
+        "../img/asus/ASUSVivoBookGO152.png",
+        "../img/asus/ASUSVivoBookGO153.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R3-7320U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Mixed Black"
+        }
+      ]
+    },
+    {
+      "id": "l-036",
+      "title": "ASUS VivoBook K3605VC-RP400",
+      "price": 7350750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookK3605VC-RP4001.png",
+        "../img/asus/ASUSVivoBookK3605VC-RP4002.png",
+        "../img/asus/ASUSVivoBookK3605VC-RP4003.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13420H Videokarta: RTX3050"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-037",
+      "title": "ASUS VivoBook K3605ZF-12535T",
+      "price": 7047000,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookK3605ZF-12535T1.png",
+        "../img/asus/ASUSVivoBookK3605ZF-12535T2.png",
+        "../img/asus/ASUSVivoBookK3605ZF-12535T3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-12500H Videokarta: RTX2050"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA (1920x1200)"
+        },
+        {
+          "k": "Rangi",
+          "v": "INDIE BLACK"
+        }
+      ]
+    },
+    {
+      "id": "l-038",
+      "title": "ASUS VivoBook K3605ZF-MB243",
+      "price": 7350750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookK3605ZF-12535T1.png",
+        "../img/asus/ASUSVivoBookK3605ZF-12535T2.png",
+        "../img/asus/ASUSVivoBookK3605ZF-12535T3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-12500H Videokarta: RTX2050"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA WV(1920x1200)"
+        },
+        {
+          "k": "Rangi",
+          "v": "Indie Black"
+        }
+      ]
+    },
+    {
+      "id": "l-039",
+      "title": "ASUS VivoBook M1807HA-S8047",
+      "price": 9112500,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookM1807HA-S80471.png",
+        "../img/asus/ASUSVivoBookM1807HA-S80472.png",
+        "../img/asus/ASUSVivoBookM1807HA-S80473.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-260"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "18\" WUXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Quiet Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-040",
+      "title": "ASUS VivoBook M5406WA-QD165",
+      "price": 11178000,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookM5406WA-QD1651.png",
+        "../img/asus/ASUSVivoBookM5406WA-QD1652.png",
+        "../img/asus/ASUSVivoBookM5406WA-QD16533.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R9 HX 370"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "24GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "14\" OLED WUXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-041",
+      "title": "ASUS VivoBook PRO 15 M6500QH-HN078",
+      "price": 6135750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookPRO151.png",
+        "../img/asus/ASUSVivoBookPRO152.png",
+        "../img/asus/ASUSVivoBookPRO153.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-5600H Videokarta: GTX1650"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD 144Hz"
+        },
+        {
+          "k": "Rangi",
+          "v": "Quiet Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-042",
+      "title": "ASUS VivoBook R1504VA-BQ922",
+      "price": 4070250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookR1504VA-BQ9221.png",
+        "../img/asus/ASUSVivoBookR1504VA-BQ9222.png",
+        "../img/asus/ASUSVivoBookR1504VA-BQ9223.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1315U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-043",
+      "title": "ASUS VivoBook S K5504VA-MA131W",
+      "price": 8322750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookSK5504VA-MA131W1.png",
+        "../img/asus/ASUSVivoBookSK5504VA-MA131W2.png",
+        "../img/asus/ASUSVivoBookSK5504VA-MA131W3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13500H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" 2.8K (2880x1620) OLED 120Hz"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-044",
+      "title": "ASUS VIVOBOOK S5606CA-RI155",
+      "price": 9416250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVIVOBOOKS5606CA-RI1551.png",
+        "../img/asus/ASUSVIVOBOOKS5606CA-RI1552.png",
+        "../img/asus/ASUSVIVOBOOKS5606CA-RI1553.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "ULTRA 5-225H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" OLED WQ+"
+        },
+        {
+          "k": "Rangi",
+          "v": "KOREA"
+        }
+      ]
+    },
+    {
+      "id": "l-045",
+      "title": "ASUS VivoBook X1502Z-BQ2270",
+      "price": 5163750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookX1502Z-BQ22701.png",
+        "../img/asus/ASUSVivoBookX1502Z-BQ22702.png",
+        "../img/asus/ASUSVivoBookX1502Z-BQ22703.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-12700H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "u Singan"
+        }
+      ]
+    },
+    {
+      "id": "l-046",
+      "title": "ASUS VivoBook X1504VA-NJ1860",
+      "price": 4677750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookX1504VA-NJ18601.png",
+        "../img/asus/ASUSVivoBookX1504VA-NJ18602.png",
+        "../img/asus/ASUSVivoBookX1504VA-NJ18603.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1334U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-047",
+      "title": "ASUS VivoBook X1504VA-NJ451",
+      "price": 3948750,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookX1504VA-NJ4511.png",
+        "../img/asus/ASUSVivoBookX1504VA-NJ4512.png",
+        "../img/asus/ASUSVivoBookX1504VA-NJ4513.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1334U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD"
+        },
+        {
+          "k": "Rangi",
+          "v": "Cool Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-048",
+      "title": "ASUS VivoBook X1605VA-MB772",
+      "price": 5285250,
+      "brand": "Asus",
+      "category": "laptops",
+      "images": [
+        "../img/asus/ASUSVivoBookX1605VA-MB7721.png",
+        "../img/asus/ASUSVivoBookX1605VA-MB7722.png",
+        "../img/asus/ASUSVivoBookX1605VA-MB7723.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1335U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB NVMe"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA"
+        },
+        {
+          "k": "Rangi",
+          "v": "Indie Black"
+        }
+      ]
+    },
+    {
+      "id": "l-049",
+      "title": "DELL Alienware 16 Area-51",
+      "price": 48600000,
+      "brand": "Dell",
+      "category": "laptops",
+      "images": [
+        "../img/dell/DELLAlienware16Area-511.png",
+        "../img/dell/DELLAlienware16Area-512.png",
+        "../img/dell/DELLAlienware16Area-513.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "51 Ultra 9-275HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "64Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "4Tb nvme"
+        }
+      ]
+    },
+    {
+      "id": "l-050",
+      "title": "DELL Gaming G15 5530",
+      "price": 7533000,
+      "brand": "Dell",
+      "category": "laptops",
+      "images": [
+        "../img/dell/DELLGamingG1555301.png",
+        "../img/dell/DELLGamingG1555302.png",
+        "../img/dell/DELLGamingG1555303.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13450HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15,6\" Full HD"
+        },
+        {
+          "k": "Video karta (GPU)",
+          "v": "RTX3050 6G\tRangi: Dark Shadow Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-051",
+      "title": "DELL INSPIRON",
+      "price": 3705750,
+      "brand": "Dell",
+      "category": "laptops",
+      "images": [
+        "../img/dell/DELLINSPIRON1.png",
+        "../img/dell/DELLINSPIRON2.png",
+        "../img/dell/DELLINSPIRON3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1215U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15,6\" Full HD\tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-052",
+      "title": "DELL Inspiron x360",
+      "price": 8565750,
+      "brand": "Dell",
+      "category": "laptops",
+      "images": [
+        "../img/dell/DELLInspironx36074401.png",
+        "../img/dell/DELLInspironx36074402.png",
+        "../img/dell/DELLInspironx36074403.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 7-150U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "14\" WUXGA \tRangi: Ice Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-053",
+      "title": "DELL Vostro 3530",
+      "price": 4774950,
+      "brand": "Dell",
+      "category": "laptops",
+      "images": [
+        "../img/dell/DELLVostro35301.png",
+        "../img/dell/DELLVostro35302.png",
+        "../img/dell/DELLVostro35303.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1334U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD 120Hz \tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-054",
+      "title": "MSI Modern 15 B12M-020XRO",
+      "price": 5042250,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSIModern15B12M-020XRO1.png",
+        "../img/msi/MSIModern15B12M-020XRO2.png",
+        "../img/msi/MSIModern15B12M-020XRO3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-1235U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" Full HD IPS\tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-055",
+      "title": "MSI Sword GF76 B13VFK-212XKR",
+      "price": 10752750,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSISwordGF76B13VFK1.png",
+        "../img/msi/MSISwordGF76B13VFK2.png",
+        "../img/msi/MSISwordGF76B13VFK3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-13620H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "17.3\" FHD IPS 144Hz\tVideo karta (GPU): RTX4060 8G\tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-056",
+      "title": "MSI SWORD GF76 HX B14WFK",
+      "price": 15612750,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSISWORDGF76HXB14WFK1.png",
+        "../img/msi/MSISWORDGF76HXB14WFK2.png",
+        "../img/msi/MSISWORDGF76HXB14WFK3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-14650HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "17.3\" QHD IPS 240HZ\tVideo Karta (GPU): RTX5060 8G \tRangi: Black \\"
+        }
+      ]
+    },
+    {
+      "id": "l-057",
+      "title": "MSI Thin 15B13UC-1000US",
+      "price": 7593750,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSIThin15B13UC-1000US1.png",
+        "../img/msi/MSIThin15B13UC-1000US2.png",
+        "../img/msi/MSIThin15B13UC-1000US3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "I5-13420H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD IPS 144Hz\tVideo Karta (GPU): RTX3050 4GB\tRangi: Cosmos Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-058",
+      "title": "MSI Thin A15 B7UC-290XKR",
+      "price": 6743250,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSIThin15B13UC-1000US1.png",
+        "../img/msi/MSIThin15B13UC-1000US2.png",
+        "../img/msi/MSIThin15B13UC-1000US3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-7735HS"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD IPS 144Hz\tVideo karta (GPU): RTX3050 4GB\tRangi:  Cosmos Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-059",
+      "title": "MSI THIN A15 B7UCX-232XKR",
+      "price": 6378750,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSIThinGF6312VE-020XKR1.png",
+        "../img/msi/MSIThinGF6312VE-020XKR2.png",
+        "../img/msi/MSIThinGF6312VE-020XKR3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "5 7535HS"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD IPS 144Hz\tVideo Karta (GPU): RTX2050 4Gb \tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-060",
+      "title": "MSI Thin GF63 12VE-020XKR",
+      "price": 8565750,
+      "brand": "Msi",
+      "category": "laptops",
+      "images": [
+        "../img/msi/MSIThinGF6312VE-020XKR1.png",
+        "../img/msi/MSIThinGF6312VE-020XKR2.png",
+        "../img/msi/MSIThinGF6312VE-020XKR3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-12650H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512GB nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD IPS 144Hz\tVideo Karta (GPU): RTX4050 6Gb\tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-061",
+      "title": "Lenovo IP 1 15IGL7",
+      "price": 2490750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIP115IGL71.png",
+        "../img/lenovo/LenovoIP115IGL72.png",
+        "../img/lenovo/LenovoIP115IGL73.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Seleron N4020"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "4Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "256Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" HD\tRangi: Cloud Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-062",
+      "title": "Lenovo IP 1 15IGL7",
+      "price": 2855250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIP115IGL71.png",
+        "../img/lenovo/LenovoIP115IGL72.png",
+        "../img/lenovo/LenovoIP115IGL73.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Seleron N4500"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Cloud Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-063",
+      "title": "Lenovo IP 3 15IAU7",
+      "price": 5892750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIP315IAU7i7-1255U1.png",
+        "../img/lenovo/LenovoIP315IAU7i7-1255U2.png",
+        "../img/lenovo/LenovoIP315IAU7i7-1255U3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-1255U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Abyss Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-064",
+      "title": "Lenovo IP 3 15IAU7",
+      "price": 5528250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIP315IAU7i7-1255U1.png",
+        "../img/lenovo/LenovoIP315IAU7i7-1255U2.png",
+        "../img/lenovo/LenovoIP315IAU7i7-1255U3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-1255U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Abyss Blue"
+        }
+      ]
+    },
+    {
+      "id": "l-065",
+      "title": "Lenovo IP Gaming 3 15ARH7",
+      "price": 8565750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIPGaming315ARH71.png",
+        "../img/lenovo/LenovoIPGaming315ARH72.png",
+        "../img/lenovo/LenovoIPGaming315ARH73.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-6600H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tVideo karta (GPU): RTX3050Ti 4G\tRangi: Onyx Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-066",
+      "title": "Lenovo IP Gaming 3 15IAH7",
+      "price": 8201250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIPGaming315ARH71.png",
+        "../img/lenovo/LenovoIPGaming315ARH72.png",
+        "../img/lenovo/LenovoIPGaming315ARH73.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-12450H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Onyx Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-067",
+      "title": "Lenovo IP SLIM 3 15IRH8",
+      "price": 4981500,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIPSLIM315IRH8i1.png",
+        "../img/lenovo/LenovoIPSLIM315IRH8i2.png",
+        "../img/lenovo/LenovoIPSLIM315IRH8i3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13420H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Arctic Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-068",
+      "title": "Lenovo IP Slim 3 16ABR8",
+      "price": 6135750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIPSLIM315IRH8i1.png",
+        "../img/lenovo/LenovoIPSLIM315IRH8i2.png",
+        "../img/lenovo/LenovoIPSLIM315IRH8i3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-5825U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD \tRangi: Arctic Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-069",
+      "title": "Lenovo IP Slim 5 16IRH10R",
+      "price": 7229250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIPSlim516IRH10R1.png",
+        "../img/lenovo/LenovoIPSlim516IRH10R2.png",
+        "../img/lenovo/LenovoIPSlim516IRH10R3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 5 210H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" 2.8K OLED\tRangi: Luna Gray"
+        }
+      ]
+    },
+    {
+      "id": "l-070",
+      "title": "Lenovo IP Slim 5 16IRH10R",
+      "price": 8322750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoIPSlim516IRH10R1.png",
+        "../img/lenovo/LenovoIPSlim516IRH10R2.png",
+        "../img/lenovo/LenovoIPSlim516IRH10R3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 7-240H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" 2.8K OLED \tRangi: LUNA_ Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-071",
+      "title": "Lenovo Legion 5 15IRX9",
+      "price": 13061250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoLegion515IRX91.png",
+        "../img/lenovo/LenovoLegion515IRX92.png",
+        "../img/lenovo/LenovoLegion515IRX93.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-13650HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "24Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tVideo Karta (GPU): RTX4060 8Gb\tRangi: Storm Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-072",
+      "title": "Lenovo LOQ 15AHP9",
+      "price": 10995750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoLOQ15AHP91.png",
+        "../img/lenovo/LenovoLOQ15AHP92.png",
+        "../img/lenovo/LenovoLOQ15AHP93.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-8845HS"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tVideo Karta (GPU): RTX4050 6Gb\tRangi: Luna Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-073",
+      "title": "Lenovo Loq 15ARP9",
+      "price": 7958250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoLOQ15AHP91.png",
+        "../img/lenovo/LenovoLOQ15AHP92.png",
+        "../img/lenovo/LenovoLOQ15AHP93.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-7235HS"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "12Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tVideo Karta (GPU): RTX3050 4Gb\tRangi: Luna Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-074",
+      "title": "Lenovo LOQ 15IAX9E",
+      "price": 8079750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoLOQ15AHP91.png",
+        "../img/lenovo/LenovoLOQ15AHP92.png",
+        "../img/lenovo/LenovoLOQ15AHP93.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-12450HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8GB DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tVideo Karta (GPU): RTX4050 6Gb\tRangi: Luna Grey"
+        }
+      ]
+    },
+    {
+      "id": "l-075",
+      "title": "Lenovo ThinkPad E16 G1",
+      "price": 9963000,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoThinkPadE16G11.png",
+        "../img/lenovo/LenovoThinkPadE16G12.png",
+        "../img/lenovo/LenovoThinkPadE16G13.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-1335U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "6\" WUXGA\tRangi: Graphite Black"
+        }
+      ]
+    },
+    {
+      "id": "l-076",
+      "title": "Lenovo V15 G4 IRU",
+      "price": 3888000,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoV15G4IRU1.png",
+        "../img/lenovo/LenovoV15G4IRU2.png",
+        "../img/lenovo/LenovoV15G4IRU3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1315U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Business Black"
+        }
+      ]
+    },
+    {
+      "id": "l-077",
+      "title": "Lenovo V15 G4 IRU",
+      "price": 4799250,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoV15G4IRU1.png",
+        "../img/lenovo/LenovoV15G4IRU2.png",
+        "../img/lenovo/LenovoV15G4IRU3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i5-13420H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Business Black"
+        }
+      ]
+    },
+    {
+      "id": "l-078",
+      "title": "Lenovo Yoga Book 9 13IMU9",
+      "price": 21930750,
+      "brand": "Lenovo",
+      "category": "laptops",
+      "images": [
+        "../img/lenovo/LenovoYogaBook91.png",
+        "../img/lenovo/LenovoYogaBook92.png",
+        "../img/lenovo/LenovoYogaBook93.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 7-155U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "13.3\" 2.8K OLED TS\tRangi: TIDAL TEAL"
+        }
+      ]
+    },
+    {
+      "id": "l-079",
+      "title": "HP 15-FC0029NQ",
+      "price": 3584250,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HP15-FC0029NQ1.png",
+        "../img/hp/HP15-FC0029NQ2.png",
+        "../img/hp/HP15-FC0029NQ3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R3-7320U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-080",
+      "title": "HP Laptop 15-fd0021nx",
+      "price": 4009500,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPLaptop15-fd0021nx1.png",
+        "../img/hp/HPLaptop15-fd0021nx2.png",
+        "../img/hp/HPLaptop15-fd0021nx3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i3-1315U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "4Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "256Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD\tRangi: Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-081",
+      "title": "HP OMEN 16-AM0148TX",
+      "price": 17010000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPOMEN16-AM0148TX1.png",
+        "../img/hp/HPOMEN16-AM0148TX2.png",
+        "../img/hp/HPOMEN16-AM0148TX3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-14650HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR5"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA IPS 240Hz\tVideo Karta (GPU): RTX5060 8G \tRangi: Korea"
+        }
+      ]
+    },
+    {
+      "id": "l-082",
+      "title": "HP OMEN MAX 16-AH0043DX Ultra",
+      "price": 36450000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPOMENMAX16-AH0043DXUltra1.png",
+        "../img/hp/HPOMENMAX16-AH0043DXUltra2.png",
+        "../img/hp/HPOMENMAX16-AH0043DXUltra3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "9-275HX"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "32Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "2Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WQXGA UWVA OLED\tVideo Karta (GPU): RTX5080 16G\tRangi: Black"
+        }
+      ]
+    },
+    {
+      "id": "l-083",
+      "title": "HP OMNIBOOK 5 Flip 14-FP0023DX",
+      "price": 8019000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPOMNIBOOK5Flip14-FP0023DX1.png",
+        "../img/hp/HPOMNIBOOK5Flip14-FP0023DX2.png",
+        "../img/hp/HPOMNIBOOK5Flip14-FP0023DX3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Core 7"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "14\" 2K"
+        }
+      ]
+    },
+    {
+      "id": "l-084",
+      "title": "HP OMNIBOOK X FLIP 14-FM0023DX",
+      "price": 9963000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPOMNIBOOKXFLIP14-FM0023DX1.png",
+        "../img/hp/HPOMNIBOOKXFLIP14-FM0023DX2.png",
+        "../img/hp/HPOMNIBOOKXFLIP14-FM0023DX3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "Ultra7 256V Processor"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "1Tb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "14\" 2K"
+        }
+      ]
+    },
+    {
+      "id": "l-085",
+      "title": "HP OMNIBOOK X FLIP 16-BE0003DX",
+      "price": 6075000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPOMNIBOOKXFLIP16-BE0003DX1.png",
+        "../img/hp/HPOMNIBOOKXFLIP16-BE0003DX2.png",
+        "../img/hp/HPOMNIBOOKXFLIP16-BE0003DX3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R5-220"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" 2K"
+        }
+      ]
+    },
+    {
+      "id": "l-086",
+      "title": "HP Pavilion 16-AG0070WM",
+      "price": 6318000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPPavilion16-AG0070WM1.png",
+        "../img/hp/HPPavilion16-AG0070WM2.png",
+        "../img/hp/HPPavilion16-AG0070WM3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "R7-8840U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "8Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "16\" WUXGA IPS\tRangi: Natural Silver"
+        }
+      ]
+    },
+    {
+      "id": "l-087",
+      "title": "HP Victus 15-fa1107TX",
+      "price": 8991000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/HPVictus15-fa1107TX1.png",
+        "../img/hp/HPVictus15-fa1107TX2.png",
+        "../img/hp/HPVictus15-fa1107TX3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "I5-12500H"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15\"6 FHD IPS 144Hz\tVideo Karta (GPU): RTX4060 8G\tRangi: Korea"
+        }
+      ]
+    },
+    {
+      "id": "l-088",
+      "title": "Pachoq Hp Envy x360 15-FE0053DX",
+      "price": 8505000,
+      "brand": "HP",
+      "category": "laptops",
+      "images": [
+        "../img/hp/PachoqHpEnvyx36015-FE0053DX1.png",
+        "../img/hp/PachoqHpEnvyx36015-FE0053DX2.png",
+        "../img/hp/PachoqHpEnvyx36015-FE0053DX3.png"
+      ],
+      "availability": "in_stock",
+      "rating": {
+        "value": 5,
+        "count": 0
+      },
+      "about": "",
+      "specs": [
+        {
+          "k": "Protsessor",
+          "v": "i7-1355U"
+        },
+        {
+          "k": "Operativ xotira (RAM)",
+          "v": "i16Gb DDR4"
+        },
+        {
+          "k": "Doimiy xotira (SSD)",
+          "v": "512Gb nvme"
+        },
+        {
+          "k": "Ekran o‘lchami",
+          "v": "15.6\" FHD IPS"
+        }
+      ]
+    }
+  ]
+}

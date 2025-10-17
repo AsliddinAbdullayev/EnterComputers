@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sevimlilar</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>
+    (function () {
+      const KEY = 'favs';
+      const get = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]') } catch (e) { return [] } };
+      const set = a => { localStorage.setItem(KEY, JSON.stringify(a)); count() };
+      const has = id => get().includes(id);
+      function toggle(id) { let f = get(); f = has(id) ? f.filter(x => x !== id) : f.concat(id); set(f); sync(); }
+      function sync() {
+        document.querySelectorAll('.like-btn[data-id]').forEach(b => {
+          const on = has(b.dataset.id);
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+          const i = b.querySelector('i'); if (i) { i.classList.toggle('fa-regular', !on); i.classList.toggle('fa-solid', on); }
+        });
+      }
+      function count() {
+        const n = get().length, badge = document.getElementById('likeCount'), navIcon = document.querySelector('.nav__like i');
+        if (badge) badge.textContent = n;
+        if (navIcon) { navIcon.classList.toggle('fa-solid', n > 0); navIcon.classList.toggle('fa-regular', n === 0); }
+      }
+      document.addEventListener('click', e => { const b = e.target.closest('.like-btn[data-id]'); if (b) toggle(b.dataset.id); });
+      document.addEventListener('DOMContentLoaded', () => { sync(); count(); });
+    })();
+  </script>
+
+  <style>
+    @media (max-width: 600px) {
+      .card {
+        width: 400px;
+      }
+
+
+      .catalog__toolbar .row {
+        display: block;
+      }
+    }
+  </style>ƒ
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <div class="logo"><a href="../index.html"><img src="../img/logo.svg" alt=""></a></div>
+      <button id="mnavOpen" class="hamburger" aria-label="Menu" aria-controls="mnav" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav">
+        <a class="nav__link" href="../index.html">Bosh sahifa</a>
+        <a class="nav__link" href="products.html">Hamma mahsulotlar</a>
+        <a class="nav__link" href="contact.html">Kontakt</a>
+        <a class="nav__link" href="faq.html">Savollar</a>
+
+
+        <a class="nav__link nav__link--stack nav__cart" href="like.html" title="Savatcha">
+          <span class="icon-wrap is-active">
+            <i class="fa-regular fa-heart"></i>
+            <span id="likeCount" class="badge">0</span>
+          </span>
+        </a>
+        <a class="nav__link nav__link--stack nav__cart" href="checkout.html" title="Savatcha">
+          <span class="icon-wrap">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="badge">0</span>
+          </span>
+        </a>
+
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+
+      </nav>
+
+    </div>
+  </header>
+  <main class="container">
+    <section class="segment segment--business"
+      style="margin-bottom:20px; display: flex; align-items: center; justify-content: space-between;">
+      <div>
+        <h2 class="segment__title">Sevimli mahsulotlaringiz</h2>
+        <p class="segment__text">Keyinroq ko‘rib olish yoki tezda xarid qilish uchun saqlanganlar.</p>
+        <div class="chips" id="likeStats" style="margin-top:10px">
+          <span class="chip">Jami: <b id="statCount">0</b> ta</span>
+          <span class="chip">Umumiy narx: <b id="statSum">0</b></span>
+          <span class="chip">O‘rtacha reyting: <b id="statRating">0</b></span>
+        </div>
+      </div>
+
+      <div class="catalog__toolbar">
+        <div class="row" style="gap:8px">
+          <button id="clearAll" class="btn btn--ghost" type="button">
+            <i class="fa-regular fa-trash-can"></i> Barchasini tozalash
+          </button>
+          <a class="btn" href="products.html"><i class="fa-solid fa-shop"></i> Mahsulotlar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="margin-top:0">
+
+      </div>
+    </section>
+
+    <section class="section" style="margin-top:12px">
+      <div id="like-grid" class="product-grid product-grid--3"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <div class="footer__brand">
+        <a class="footer__logo" href="../index.html" aria-label="Bosh sahifa">
+
+          <img src="../img/logo.svg" alt="Logo"><br>
+        </a>
+      </div>
+
+      <div class="footer__right">
+        <nav class="footer__nav" aria-label="Footer navigatsiya">
+          <a href="../index.html">Bosh sahifa</a>
+          <a href="like.html">Like page</a>
+          <a href="checkout.html">Sotib olish</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="faq.html">Savollar</a>
+        </nav>
+
+        <div class="footer__socials" aria-label="Ijtimoiy tarmoqlar">
+          <a class="soc-btn soc--tg" href="https://t.me/entercomputers_uz" target="_blank" rel="noopener">
+            <i class="fa-brands fa-telegram"></i> Telegram
+          </a>
+          <a class="soc-btn soc--ig" href="https://www.instagram.com/entercomputers.uz/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a class="soc-btn soc--yt" href="https://youtube.com/@entercomputers-uz?si=5PcyqQr7HOBEf-o9" target="_blank"
+            rel="noopener">
+            <i class="fa-brands fa-youtube"></i> YouTube
+          </a>
+        </div>
+      </div>
+
+
+      <span>© <span id="y"></span> Enter Computers. Barcha huquqlar himoyalangan.</span>
+
+
+    </div>
+  </footer>
+
+  <aside id="mnav" class="mnav" aria-hidden="true">
+    <div class="mnav__head">
+      <a class="mnav__logo" href="index.html">
+        <img src="../img/logo.svg" alt="Logo">
+      </a>
+      <button id="mnavClose" class="mnav__close" aria-label="Yopish">✕</button>
+    </div>
+
+
+    <nav class="mnav__nav">
+      <a href="../index.html" class="mnav__link">Bosh sahifa</a>
+      <a href="products.html" class="mnav__link">Hamma mahsulotlar</a>
+      <a href="like.html" class="mnav__link">Like page</a>
+      <a href="checkout.html" class="mnav__link">Sotib olish</a>
+      <a href="contact.html" class="mnav__link">Kontakt</a>
+      <a href="faq.html" class="mnav__link">Savollar</a>
+    </nav>
+
+    <div class="mnav__meta">
+      <a class="mnav__phone" href="tel:+998330003434">📞 +998 33 000 34 34</a>
+
+    </div>
+
+    <div class="mnav__socials">
+      <a class="soc soc--tg" href="https://t.me/entercomputers_uz" target="_blank" rel="noopener">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+      <a class="soc soc--ig" href="https://www.instagram.com/entercomputers.uz/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a class="soc soc--yt" href="https://youtube.com/@entercomputers-uz?si=5PcyqQr7HOBEf-o9" target="_blank"
+        rel="noopener">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </aside>
+
+  <div id="mnavShroud" class="mnav-shroud" hidden></div>
+
+
+  <script>
+
+  </script>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/like.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Savatcha — ShopBro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/checkout.css">
+  <link rel="stylesheet" href="../css/styles.css">
+
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="inner">
+      <div class="logo"><a href="../index.html"><img src="../img/logo.svg" alt=""></a></div>
+      <button id="mnavOpen" class="hamburger" aria-label="Menu" aria-controls="mnav" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav">
+        <a class="nav__link" href="../index.html">Bosh sahifa</a>
+        <a class="nav__link" href="products.html">Hamma mahsulotlar</a>
+        <a class="nav__link" href="contact.html">Kontakt</a>
+        <a class="nav__link" href="faq.html">Savollar</a>
+
+
+        <a class="nav__link nav__link--stack nav__cart" href="like.html" title="Savatcha">
+          <span class="icon-wrap">
+            <i class="fa-regular fa-heart"></i>
+            <span id="likeCount" class="badge">0</span>
+          </span>
+        </a>
+        <a class="nav__link nav__link--stack nav__cart" href="checkout.html" title="Savatcha">
+          <span class="icon-wrap is-active">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartCount" class="badge">0</span>
+          </span>
+        </a>
+
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="page-head">
+      <h1 class="page-title">Savatcha</h1>
+      <span id="countLabel" class="muted">0 ta mahsulot</span>
+    </div>
+
+    <div class="wrap"> 
+      <section id="cart"></section>
+ 
+      <aside class="summary">
+        <h3>Buyurtma tafsilotlari</h3>
+
+        <div class="srow"><span id="s-items">0 ta mahsulot</span><b id="s-sum">0</b></div>
+        <div class="dots"></div>
+        <div class="srow"><span>Jami</span><b id="s-grand">0</b></div>
+ 
+        <div class="srow" style="margin-top:12px">
+          <button id="openForm" class="btn btn--primary" style="width:100%" disabled>Buyurtmani
+            rasmiylashtirish</button>
+        </div>
+
+        <div class="srow"><a class="btn" style="width:100%" href="products.html">Xaridni davom ettirish</a>
+        </div>
+
+        <p class="muted" style="margin:12px 0 0;display:flex;gap:8px;align-items:flex-start">
+          <i class="fa-regular fa-clock" style="margin-top:2px"></i>
+          <span>Yetkazib berish va to‘lov usullarini rasmiylashtirish bosqichida tanlaysiz.</span>
+        </p>
+
+        <form id="coForm" class="co-form" hidden>
+          <label>Ism (ixtiyoriy)</label>
+          <input type="text" name="name" placeholder="Ali">
+          <label>Telefon raqam <span style="color:#ef4444">*</span></label>
+          <input type="tel" name="phone" placeholder="+998 90 123 45 67" required>
+          <label>Izoh (ixtiyoriy)</label>
+          <textarea name="comment" rows="3" placeholder="Eslatma..."></textarea>
+          <button class="btn btn--primary" type="submit">Yuborish</button>
+          <p id="status" class="muted" style="display:none;margin:6px 0 0"></p>
+        </form>
+      </aside>
+    </div>
+
+    <section id="empty" class="empty">
+      <h3>Savatcha bo‘sh</h3>
+      <p class="muted">Mahsulot kartasidagi “Buyurtma berish” tugmasini bosing — shu yerda to‘planadi.</p>
+      <div><a class="btn btn--primary" href="products.html">Mahsulotlarga qaytish</a></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner"> 
+      <div class="footer__brand">
+        <a class="footer__logo" href="../index.html" aria-label="Bosh sahifa">
+          
+          <img src="../img/logo.svg" alt="Logo"><br>
+        </a>
+      </div>
+ 
+      <div class="footer__right">
+        <nav class="footer__nav" aria-label="Footer navigatsiya">
+          <a href="../index.html">Bosh sahifa</a>
+          <a href="like.html">Like page</a>
+          <a href="checkout.html">Sotib olish</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="faq.html">Savollar</a>
+        </nav>
+
+        <div class="footer__socials" aria-label="Ijtimoiy tarmoqlar">
+          <a class="soc-btn soc--tg" href="https://t.me/entercomputers_uz" target="_blank" rel="noopener">
+            <i class="fa-brands fa-telegram"></i> Telegram
+          </a>
+          <a class="soc-btn soc--ig" href="https://www.instagram.com/entercomputers.uz/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a class="soc-btn soc--yt" href="https://youtube.com/@entercomputers-uz?si=5PcyqQr7HOBEf-o9" target="_blank"
+            rel="noopener">
+            <i class="fa-brands fa-youtube"></i> YouTube
+          </a>
+        </div>
+      </div>
+
+
+      <span>© <span id="y"></span> Enter Computers. Barcha huquqlar himoyalangan.</span>
+
+
+    </div>
+  </footer>
+
+  <aside id="mnav" class="mnav" aria-hidden="true">
+    <div class="mnav__head">
+      <a class="mnav__logo" href="index.html">
+        <img src="../img/logo.svg" alt="Logo">
+      </a>
+      <button id="mnavClose" class="mnav__close" aria-label="Yopish">✕</button>
+    </div>
+
+
+    <nav class="mnav__nav">
+      <a href="../index.html" class="mnav__link">Bosh sahifa</a>
+      <a href="products.html" class="mnav__link">Hamma mahsulotlar</a>
+      <a href="like.html" class="mnav__link">Like page</a>
+      <a href="checkout.html" class="mnav__link">Sotib olish</a>
+      <a href="contact.html" class="mnav__link">Kontakt</a>
+      <a href="faq.html" class="mnav__link">Savollar</a>
+    </nav>
+
+    <div class="mnav__meta"> 
+      <a class="mnav__phone" href="tel:+998330003434">📞 +998 33 000 34 34</a>
+
+    </div>
+ 
+    <div class="mnav__socials">
+      <a class="soc soc--tg" href="https://t.me/entercomputers_uz" target="_blank" rel="noopener">
+        <i class="fa-brands fa-telegram"></i>
+      </a>
+      <a class="soc soc--ig" href="https://www.instagram.com/entercomputers.uz/" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a class="soc soc--yt" href="https://youtube.com/@entercomputers-uz?si=5PcyqQr7HOBEf-o9" target="_blank"
+        rel="noopener">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </aside>
+ 
+  <div id="mnavShroud" class="mnav-shroud" hidden></div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/checkout.js" defer></script>
+</body>
+</html>
