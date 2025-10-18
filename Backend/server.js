@@ -1,33 +1,31 @@
-// server.js
+// server.js (CommonJS versiya)
 // ──────────────────────────────────────────────────────────────────────────────
-// Minimal, lekin prodga mos: CORS normalization, health check, /api/order,
-// Telegramga yuborish, products.json o‘qish.
-// Node >=18 (global fetch mavjud).
-// ──────────────────────────────────────────────────────────────────────────────
-
-import fs from 'fs';
-import path from 'path';
-import express from 'express';
-import cors from 'cors';
-import dotenv from 'dotenv';
+const fs = require('fs');
+const path = require('path');
+const express = require('express');
+const cors = require('cors');
+const dotenv = require('dotenv');
 
 dotenv.config();
 
 const app = express();
 
-// ── ENV
-const HOST = process.env.HOST?.trim() || '0.0.0.0';
+// ENV
+const HOST = (process.env.HOST || '').trim() || '0.0.0.0';
 const PORT = Number(process.env.PORT || 3000);
 
-const PRODUCTS_FILE = process.env.PRODUCTS_FILE?.trim() || path.join(process.cwd(), 'data', 'products.json');
-const TG_BOT_TOKEN = process.env.TG_BOT_TOKEN?.trim();
-const TG_CHAT_ID   = process.env.TG_CHAT_ID?.trim();
+const PRODUCTS_FILE =
+  (process.env.PRODUCTS_FILE && process.env.PRODUCTS_FILE.trim()) ||
+  path.join(process.cwd(), 'data', 'products.json');
+
+const TG_BOT_TOKEN = process.env.TG_BOT_TOKEN && process.env.TG_BOT_TOKEN.trim();
+const TG_CHAT_ID   = process.env.TG_CHAT_ID && process.env.TG_CHAT_ID.trim();
 
 if (!TG_BOT_TOKEN || !TG_CHAT_ID) {
   console.warn('⚠️  TG_BOT_TOKEN yoki TG_CHAT_ID .env faylida topilmadi. Telegram xabarlari yuborilmaydi.');
 }
 
-// ── CORS: .env dagi ALLOWED_ORIGINS trailing slash’larni tozalaymiz
+// CORS (trailing slashlarni normalizatsiya qilamiz)
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
   .split(',')
   .map(s => s.trim().replace(/\/$/, ''))
@@ -35,8 +33,7 @@ const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
 
 app.use(cors({
   origin(origin, cb) {
-    // Postman/cURL yoki origin yo‘qligida ruxsat beramiz
-    if (!origin) return cb(null, true);
+    if (!origin) return cb(null, true); // Postman/cURL
     const cleaned = origin.replace(/\/$/, '');
     if (ALLOWED_ORIGINS.includes(cleaned)) return cb(null, true);
     cb(new Error('Not allowed by CORS: ' + origin));
@@ -46,7 +43,7 @@ app.use(cors({
 
 app.use(express.json());
 
-// ── Productsni yuklash
+// Productsni yuklash
 let products = [];
 try {
   const raw = fs.readFileSync(PRODUCTS_FILE, 'utf8');
@@ -59,12 +56,12 @@ try {
   console.error('❌ PRODUCTS_FILE o‘qishda xato:', e.message);
 }
 
-// ── Healthcheck
+// Healthcheck
 app.get('/health', (req, res) => {
   res.json({ ok: true, products: products.length });
 });
 
-// ── Buyurtma qabul qilish
+// Buyurtma qabul qilish
 app.post('/api/order', async (req, res) => {
   try {
     const {
@@ -72,24 +69,22 @@ app.post('/api/order', async (req, res) => {
       phone = '',
       productId = '',
       quantity = 1,
-      cart = [],           // ixtiyoriy: [{id, title, price, qty}, ...]
+      cart = [],
       note = '',
-      originUrl = '',      // frontdan yuboramiz
+      originUrl = '',
     } = req.body || {};
 
-    // Minimal validatsiya
     if (!name || !phone || (!productId && (!cart || cart.length === 0))) {
       return res.status(400).json({ ok: false, error: 'name, phone va product/cart talab qilinadi' });
     }
 
-    // Product nomini aniqlashga urinib ko‘ramiz
+    // Product nomini topishga urinamiz
     let title = '';
     if (productId) {
       const p = products.find(x => String(x.id) === String(productId));
-      title = p?.title || productId;
+      title = (p && p.title) || productId;
     }
 
-    // Telegram xabari
     const lines = [];
     lines.push('🛒 *Yangi buyurtma*');
     lines.push(`👤 *Ism:* ${escapeMd(name)}`);
@@ -120,7 +115,6 @@ app.post('/api/order', async (req, res) => {
 
     const text = lines.join('\n');
 
-    // Telegramga yuborish (agar sozlangan bo‘lsa)
     if (TG_BOT_TOKEN && TG_CHAT_ID) {
       const tgUrl = `https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`;
       const resp = await fetch(tgUrl, {
@@ -134,30 +128,26 @@ app.post('/api/order', async (req, res) => {
         }),
       });
       if (!resp.ok) {
-        const errText = await safeText(resp);
+        let errText = '';
+        try { errText = await resp.text(); } catch { errText = '<no-text>'; }
         console.warn('⚠️ Telegram sendMessage failed:', resp.status, errText);
       }
     }
 
     res.json({ ok: true });
-
   } catch (err) {
     console.error('❌ /api/order xato:', err);
     res.status(500).json({ ok: false, error: 'server_error' });
   }
 });
 
-// ── Serverni ko‘tarish
+// Serverni ko‘tarish
 app.listen(PORT, HOST, () => {
   console.log(`🚀 Server listening on http://${HOST}:${PORT}`);
 });
 
-// ── Yordamchi
-function escapeMd(s = '') {
-  // MarkdownV2 escaping
-  return String(s).replace(/[_*[\]()~`>#+\-=|{}.!\\]/g, '\\$&');
-}
-
-async function safeText(r) {
-  try { return await r.text(); } catch { return '<no-text>'; }
+// Yordamchi
+function escapeMd(s) {
+  s = String(s || '');
+  return s.replace(/[_*[\]()~`>#+\-=|{}.!\\]/g, '\\$&');
 }
