@@ -1,203 +1,163 @@
-// server.js — Order API (Express + Telegram, with robust product lookup)
-// Node 18+ tavsiya (global fetch mavjud). Node <=16 bo‘lsa: `npm i node-fetch` va import qiling.
+// server.js
+// ──────────────────────────────────────────────────────────────────────────────
+// Minimal, lekin prodga mos: CORS normalization, health check, /api/order,
+// Telegramga yuborish, products.json o‘qish.
+// Node >=18 (global fetch mavjud).
+// ──────────────────────────────────────────────────────────────────────────────
 
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const fs = require('fs');
+import fs from 'fs';
+import path from 'path';
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
 
-try { require('dotenv').config(); } catch { }
+dotenv.config();
 
 const app = express();
 
-/* ================== Config ================== */
-const HOST = process.env.HOST || '65.108.241.44';
+// ── ENV
+const HOST = process.env.HOST?.trim() || '0.0.0.0';
 const PORT = Number(process.env.PORT || 3000);
 
-// Telegram
-const BOT_TOKEN = process.env.BOT_TOKEN || process.env.TG_BOT_TOKEN || '<PUT_TELEGRAM_BOT_TOKEN>';
-const CHAT_ID = process.env.CHAT_ID || process.env.TG_CHAT_ID || '<PUT_CHAT_ID>';
+const PRODUCTS_FILE = process.env.PRODUCTS_FILE?.trim() || path.join(process.cwd(), 'data', 'products.json');
+const TG_BOT_TOKEN = process.env.TG_BOT_TOKEN?.trim();
+const TG_CHAT_ID   = process.env.TG_CHAT_ID?.trim();
 
-// Frontend origins (CORS)
-const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || 'http://65.108.241.44/,')
+if (!TG_BOT_TOKEN || !TG_CHAT_ID) {
+  console.warn('⚠️  TG_BOT_TOKEN yoki TG_CHAT_ID .env faylida topilmadi. Telegram xabarlari yuborilmaydi.');
+}
+
+// ── CORS: .env dagi ALLOWED_ORIGINS trailing slash’larni tozalaymiz
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
   .split(',')
-  .map(s => s.trim())
+  .map(s => s.trim().replace(/\/$/, ''))
   .filter(Boolean);
-
-// products.json yo‘li (ABSOLUTE tavsiya etiladi)
-const PRODUCTS_FILE = process.env.PRODUCTS_FILE
-  || path.join(__dirname, 'data', 'products.json');
-
-/* ================== Middlewares ================== */
-app.use(express.json({ limit: '1mb' }));
 
 app.use(cors({
   origin(origin, cb) {
-    // Postman/cURL kabi no-origin so‘rovlar uchun ruxsat
+    // Postman/cURL yoki origin yo‘qligida ruxsat beramiz
     if (!origin) return cb(null, true);
-    if (ALLOWED_ORIGINS.includes(origin)) return cb(null, true);
+    const cleaned = origin.replace(/\/$/, '');
+    if (ALLOWED_ORIGINS.includes(cleaned)) return cb(null, true);
     cb(new Error('Not allowed by CORS: ' + origin));
   },
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true,
+  credentials: false,
 }));
 
-app.options('*', (req, res) => res.sendStatus(204));
+app.use(express.json());
 
-// Oddiy log
-app.use((req, _res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-  next();
-});
-
-/* ================== Helpers ================== */
-const safeStr = s => (s == null ? '' : String(s));
-const normId = s => String(s || '').trim().toLowerCase();
-
-function fmtUZS(n) {
-  const val = Math.round(Number(n) || 0);
-  try {
-    return new Intl.NumberFormat('uz-UZ').format(val) + ' soʻm';
-  } catch {
-    return String(val).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' soʻm';
-  }
-}
-
-/* ================== Products cache ================== */
+// ── Productsni yuklash
 let products = [];
 try {
   const raw = fs.readFileSync(PRODUCTS_FILE, 'utf8');
-  const parsed = JSON.parse(raw);
-  products = Array.isArray(parsed) ? parsed : (parsed.products || []);
+  products = JSON.parse(raw);
   console.log(`📚 Products loaded: ${products.length} (from ${PRODUCTS_FILE})`);
+  if (products[0]?.id) {
+    console.log('🔎 ID sample:', products.slice(0, 5).map(p => p.id));
+  }
 } catch (e) {
-  console.error('❌ products.json o‘qishda xatolik:', e.message);
-  products = [];
+  console.error('❌ PRODUCTS_FILE o‘qishda xato:', e.message);
 }
 
-// ID -> product (normallashtirilgan ID bilan)
-const PRODUCTS_BY_ID = new Map(
-  products.map(p => [normId(p.id), p])
-);
+// ── Healthcheck
+app.get('/health', (req, res) => {
+  res.json({ ok: true, products: products.length });
+});
 
-// Debug: bir nechta ID namunalari
-console.log('🔎 ID samples:', Array.from(PRODUCTS_BY_ID.keys()).slice(0, 5));
-
-/* ================== Message builder ================== */
-// payload: { items:[{id,qty}(, title, price)], name, phone, comment, originUrl }
-function buildOrderMessage(payload) {
-  const {
-    items = [],
-    name = '-',
-    phone = '-',
-    comment = '',
-    originUrl = '',
-    createdAt = new Date()
-  } = payload || {};
-
-  let lines = [];
-  let total = 0;
-
-  items.forEach((it, idx) => {
-    const rawId = (it && it.id) ? it.id : '';
-    const id = safeStr(rawId);
-    const key = normId(id);
-    const qty = Math.max(1, Number(it.qty) || 1);
-
-    // Backend manbasi — products.json
-    let prod = PRODUCTS_BY_ID.get(key);
-    if (!prod) {
-      console.warn('⚠️ Product ID not found in products.json:', id);
-    }
-
-    // Topilmasa frontdan kelgan title/price fallback sifatida olinadi
-    const title = safeStr(prod?.title ?? it.title ?? '(nomi topilmadi)');
-    const unitPrice = Number(prod?.price ?? it.price ?? 0);
-    const lineTotal = unitPrice * qty;
-
-    total += lineTotal;
-
-    // Eski format: "1) Nomi x2 — 4 554 000 soʻm (ID: p-005)"
-    lines.push(`${idx + 1}) ${title} x${qty}${lineTotal > 0 ? ` — ${fmtUZS(lineTotal)}` : ''} (ID: ${id})`);
-  });
-
-  const listBlock = lines.join('\n');
-  const totalLine = fmtUZS(total);
-  const ts = new Date(createdAt).toLocaleString('en-US', { hour12: false });
-
-  return (
-    `🛒 Yangi buyurtma
-━━━━━━━━━━━━━━
-${listBlock}
-━━━━━━━━━━━━━━
-💵 Jami: ${totalLine}
-
-👤 Mijoz: ${safeStr(name) || '-'}
-📱 Telefon: ${safeStr(phone) || '-'}
-📝 Izoh: ${safeStr(comment) || '-'}
-🔗 ${safeStr(originUrl) || '-'}
-⌚️ ${ts}`
-  );
-}
-
-/* ================== Telegram ================== */
-async function sendToTelegram(text) {
-  if (!BOT_TOKEN || !CHAT_ID) {
-    console.warn('⚠️ BOT_TOKEN yoki CHAT_ID yo‘q — xabar Telegramga yuborilmadi.');
-    return { ok: false, skipped: true };
-  }
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      chat_id: CHAT_ID,
-      text,
-      disable_web_page_preview: true
-    })
-  });
-  const data = await res.json();
-  if (!data.ok) {
-    console.error('❌ Telegram error:', data);
-    throw new Error('Telegram send failed');
-  }
-  return data;
-}
-
-/* ================== Routes ================== */
-app.get('/', (_req, res) => res.type('text').send('Order API is running'));
-app.get('/health', (_req, res) => res.json({ ok: true, products: products.length }));
-
-// POST /api/order
-// Body: { items:[{id,qty}(, title, price)], name, phone, comment, originUrl }
+// ── Buyurtma qabul qilish
 app.post('/api/order', async (req, res) => {
   try {
-    const payload = req.body || {};
-    if (!Array.isArray(payload.items) || payload.items.length === 0) {
-      return res.status(400).json({ ok: false, error: 'items bo‘sh' });
+    const {
+      name = '',
+      phone = '',
+      productId = '',
+      quantity = 1,
+      cart = [],           // ixtiyoriy: [{id, title, price, qty}, ...]
+      note = '',
+      originUrl = '',      // frontdan yuboramiz
+    } = req.body || {};
+
+    // Minimal validatsiya
+    if (!name || !phone || (!productId && (!cart || cart.length === 0))) {
+      return res.status(400).json({ ok: false, error: 'name, phone va product/cart talab qilinadi' });
     }
 
-    const msg = buildOrderMessage({
-      items: payload.items,
-      name: payload.name,
-      phone: payload.phone,
-      comment: payload.comment,
-      originUrl: payload.originUrl,
-      createdAt: new Date()
-    });
+    // Product nomini aniqlashga urinib ko‘ramiz
+    let title = '';
+    if (productId) {
+      const p = products.find(x => String(x.id) === String(productId));
+      title = p?.title || productId;
+    }
 
-    await sendToTelegram(msg);
+    // Telegram xabari
+    const lines = [];
+    lines.push('🛒 *Yangi buyurtma*');
+    lines.push(`👤 *Ism:* ${escapeMd(name)}`);
+    lines.push(`📞 *Telefon:* ${escapeMd(phone)}`);
+
+    if (productId) {
+      lines.push(`📦 *Product:* ${escapeMd(title)} (${escapeMd(String(productId))})`);
+      lines.push(`🔢 *Soni:* ${escapeMd(String(quantity))}`);
+    }
+
+    if (Array.isArray(cart) && cart.length > 0) {
+      lines.push('');
+      lines.push('*Savatcha:*');
+      cart.forEach((c, i) => {
+        lines.push(`${i + 1}) ${escapeMd(c.title || c.id)} — ${escapeMd(String(c.qty || 1))} dona`);
+      });
+    }
+
+    if (note) {
+      lines.push('');
+      lines.push(`📝 *Izoh:* ${escapeMd(note)}`);
+    }
+
+    if (originUrl) {
+      lines.push('');
+      lines.push(`🔗 *Sahifa:* ${escapeMd(originUrl)}`);
+    }
+
+    const text = lines.join('\n');
+
+    // Telegramga yuborish (agar sozlangan bo‘lsa)
+    if (TG_BOT_TOKEN && TG_CHAT_ID) {
+      const tgUrl = `https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`;
+      const resp = await fetch(tgUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: TG_CHAT_ID,
+          text,
+          parse_mode: 'MarkdownV2',
+          disable_web_page_preview: true,
+        }),
+      });
+      if (!resp.ok) {
+        const errText = await safeText(resp);
+        console.warn('⚠️ Telegram sendMessage failed:', resp.status, errText);
+      }
+    }
+
     res.json({ ok: true });
-  } catch (e) {
-    console.error(e);
-    res.status(500).json({ ok: false, error: 'Order send failed' });
+
+  } catch (err) {
+    console.error('❌ /api/order xato:', err);
+    res.status(500).json({ ok: false, error: 'server_error' });
   }
 });
 
-/* ================== Start ================== */
+// ── Serverni ko‘tarish
 app.listen(PORT, HOST, () => {
-  console.log(`🚀 Order API ready on http://${HOST}:${PORT}`);
-  console.log(`📄 products file: ${PRODUCTS_FILE}`);
-  console.log(`🌐 CORS allow: ${ALLOWED_ORIGINS.join(', ')}`);
+  console.log(`🚀 Server listening on http://${HOST}:${PORT}`);
 });
+
+// ── Yordamchi
+function escapeMd(s = '') {
+  // MarkdownV2 escaping
+  return String(s).replace(/[_*[\]()~`>#+\-=|{}.!\\]/g, '\\$&');
+}
+
+async function safeText(r) {
+  try { return await r.text(); } catch { return '<no-text>'; }
+}
