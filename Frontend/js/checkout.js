@@ -1,5 +1,4 @@
-
-const API_URL = 'http://127.0.0.1:3000/api/order';
+const API_URL = 'http://65.108.241.44:3000/api/order';
 const DATA_URL = '/data/products.json';
 const ORDER_KEY = 'orderItems';  
 
@@ -151,7 +150,7 @@ function sendOrder(payload) {
 
     const payload = {
       name, phone, comment,
-      sourceUrl: location.href,
+      originUrl: location.href,
       items: order.map(x => ({ id: x.id, qty: x.qty })),    
       totalPrice: order.reduce((s, x) => s + x.price * x.qty, 0)
     };
